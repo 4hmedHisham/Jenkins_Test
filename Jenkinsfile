@@ -4,7 +4,7 @@ pipeline {
       stage("build"){
         steps {
           echo 'Building the Code...'
-          gcc HelloWorld.c.c -o HelloWorld_exe
+          gcc HelloWorld.c -o HelloWorld_exe
       }
     }
     stage("TEST"){
